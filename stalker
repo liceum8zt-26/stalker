@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S.T.A.L.K.E.R Zone</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    background: #0a0d0d;
+    color: #d0d0d0;
+}
+
+/* NAV */
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 15px 40px;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    border-bottom: 1px solid #00ff9f;
+}
+
+nav h1 {
+    color: #00ff9f;
+}
+
+nav a {
+    color: #ccc;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #00ff9f;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+    url('https://images.unsplash.com/photo-1523966211575-eb4a6d9c3b1c');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.hero h1 {
+    font-size: 80px;
+    color: #00ff9f;
+}
+
+.hero p {
+    margin-top: 20px;
+}
+
+.btn {
+    margin-top: 25px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: #00ff9f;
+    color: black;
+    text-decoration: none;
+}
+
+/* SECTION */
+.section {
+    padding: 100px 10%;
+}
+
+/* FACTIONS */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    background: #111;
+    padding: 20px;
+    border: 1px solid #00ff9f;
+}
+
+.card:hover {
+    background: #1a1f1f;
+}
+
+/* ARTIFACTS */
+.artifacts img {
+    width: 100%;
+    border: 1px solid #00ff9f;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: #777;
+}
+
+/* EFFECT (легкий glitch) */
+.hero h1 {
+    text-shadow: 0 0 5px #00ff9f;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .hero h1 {font-size: 40px;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <h1>S.T.A.L.K.E.R</h1>
+    <div>
+        <a href="#zone">Зона</a>
+        <a href="#factions">Фракції</a>
+        <a href="#artifacts">Артефакти</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <h1>ЗОНА ВІДЧУЖЕННЯ</h1>
+        <p>Ласкаво просимо в найнебезпечніше місце на Землі</p>
+        <a href="#zone" class="btn">Увійти в Зону</a>
+    </div>
+</section>
+
+<!-- ZONE -->
+<section id="zone" class="section">
+    <h2>☢ Що таке Зона?</h2>
+    <p>
+        Зона відчуження — це територія навколо Чорнобиля, де після другого вибуху
+        з’явились аномалії, мутанти та артефакти.
+    </p>
+</section>
+
+<!-- FACTIONS -->
+<section id="factions" class="section">
+    <h2>👥 Фракції</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Сталкери</h3>
+            <p>Вільні дослідники Зони.</p>
+        </div>
+        <div class="card">
+            <h3>Долг</h3>
+            <p>Борються проти Зони.</p>
+        </div>
+        <div class="card">
+            <h3>Свобода</h3>
+            <p>Вважають Зону даром.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ARTIFACTS -->
+<section id="artifacts" class="section artifacts">
+    <h2>💎 Артефакти</h2>
+    <p>Незвичайні предмети з аномалій, що дають сили.</p>
+    <br>
+    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>☢ S.T.A.L.K.E.R Fan Site 2026</p>
+</footer>
+
+</body>
+</html>
